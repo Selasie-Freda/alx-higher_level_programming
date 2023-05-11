@@ -23,7 +23,7 @@ if __name__ == "__main__":
         sys.exit(0)
     elif sys.argv[1] == '/':
         print("{} / {} = {:d}".format(sys.argv[0], sys.argv[2],
-            div(int(sys.argv[0]), int(sys.argv[2]))))
+              div(int(sys.argv[0]), int(sys.argv[2]))))
         sys.exit(0)
 
     for i in operator:
