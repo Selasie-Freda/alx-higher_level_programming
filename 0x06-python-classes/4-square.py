@@ -3,7 +3,7 @@
 
 
 class Square:
-    """nstantiation with optional size: def __init__(self, size=0):"""
+    """instantiation with optional size: def __init__(self, size=0):"""
     def __init__(self, size=0):
         if isinstance(size, int) is False:
             raise TypeError("size must be an int")
@@ -14,8 +14,7 @@ class Square:
 
     def area(self):
         """area function returns the square area"""
-        Area = self.__size ** 2
-        return Area
+        return self.__size ** 2
 
     @property
     def size(self):
