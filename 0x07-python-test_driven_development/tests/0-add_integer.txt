@@ -1,0 +1,56 @@
+-------------------------------------------------
+The test for module ^^^add_integer^^^
+-------------------------------------------------
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Test cases
+
+>>> add_integer(234, 7890)
+8124
+
+>>> add_integer(6578, )
+6676
+
+>>> add_integer('2e2', 23490)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(None, 890)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer((890, 893,78493), 7890)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer([908, 890], 789)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(909, 'fhjsu')
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(9334, (700, 990))
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(7389, [89094, "hfis", 890])
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer("fi0ijsk", "string?")
+Traceback (most recent call last):
+TypeError: a and b must be integers
+
+>>> add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(2, None)
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer(" ", "")
+Traceback (most recent call last):
+TypeError: a and b must be integers
