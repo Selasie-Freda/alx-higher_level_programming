@@ -1,0 +1,11 @@
+-------------------------------------------------
+test file for '''matrix_divided'''
+-------------------------------------------------
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+test cases
+
+>>> matrix_divided([['hello', 'hi'], [23, 'selasie']])
+Traceback (most recent call last)
+TypeError("matrix must be a matrix (list of lists) of integers/floats")
